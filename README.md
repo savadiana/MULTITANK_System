@@ -129,30 +129,4 @@ Key blocks: `Constant` (references), `Sum` (error computation), `Mux` (input vec
 
 ---
 
-## Requirements
-
-- MATLAB / Simulink
-- Fuzzy Logic Toolbox
-- (For real-time operation on the rig) Real-Time Windows Target and the INTECO MULTITANK driver with an RT-DAC/PCI board
-
----
-
-## How to Run (simulation)
-
-1. Open MATLAB and set this repository as the working folder.
-2. Load the fuzzy controller into the workspace, e.g.:
-   ```matlab
-   fis = readfis('fuzzy/controller.fis');
-   ```
-3. Open the Simulink model (identified-model variant or `Tank3` variant) and set the desired reference levels.
-4. Run the simulation (fixed-step solver `ode5`, sample time `0.01 s`) and inspect the levels and command in the `Scope`.
-
-> Adjust the file names above to match your actual model and FIS file names.
-
----
-
-
-
-## License
-
-Add a license of your choice (e.g. MIT) if you intend to share this project publicly.
+se of your choice (e.g. MIT) if you intend to share this project publicly.
